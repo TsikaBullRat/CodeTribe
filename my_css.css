@@ -1,0 +1,121 @@
+/*Major components*/
+body{
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3{
+  color: #4c4f56;
+}
+p{
+  color: #adb1b4;
+}
+a{
+  text-decoration: none;
+  color: #adb1b4;
+}
+a:hover{
+  color: #76b3ab;
+}
+/*
+ * We will be coding and manipulating each div box
+ * labeling them line by line.
+*/
+
+/*Line1 will hold logo first, header, first paragrphs and the two buttons/links*/
+.line1{
+  align-content: center;
+  text-align: center;
+  margin-top: 150px;
+  padding-bottom: 245px;
+}
+.line1 img{
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+.links{
+  margin-left: 740px;
+  display: flex;
+}
+.ios{
+  margin: 8px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  background-color: #67c4b1;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+}
+.ios:hover{
+  background-color: #8a95ff;
+}
+.mac{
+  margin: 8px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  background-color: #67c4b1;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+}
+.mac:hover{
+  background-color: #8a95ff;
+}
+
+
+/*Line2 will contain an H3 and slightly smaller text*/
+.line2{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.line2 p{
+  font-size: 15px;
+  padding-left: 700px;
+  padding-right: 700px;
+}
+
+/*Line3 will contain one image on the left and three text sets.*/
+.line3{
+  display:flex;
+  justify-content: center;
+}
+.left{
+  margin-left: 5%;
+}
+.line3 p{
+  font-size: 13px;
+  padding-bottom: 55px;
+}
+
+/*Line4 will be non- existent and simply contain class*/
+.pad{
+  padding: 300px 0px 300px 0px;
+}
+
+/*Line5 is are last few facts*/
+.line5{
+  padding: 100px;
+}
+
+/*Footer*/
+.foot{
+  display: flex;
+  background-color: #f5f6f8;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  height: 150px;
+}
+.icon{
+  padding-left: 30px;
+  padding-right: 30px
+}
+svg{
+  padding-left: 50px;
+  width: 70px;
+  height: 70px;
+}
+svg:hover{
+  fill: green;
+}
