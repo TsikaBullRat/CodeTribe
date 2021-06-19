@@ -4,6 +4,7 @@ body{
   background-repeat: no-repeat;
   background-size:contain;
   font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
 }
 h1, h2, h3{
   color: #4c4f56;
@@ -22,8 +23,151 @@ a:hover{
  * We will be coding and manipulating each div box
  * labeling them line by line.
 */
+.head-line{
+  align-content: center;
+  text-align: center;
+  margin-top: 150px;
+  padding-bottom: 245px;
+}
+.links{
+  /*margin-left: 35%;
+  display: flex;*/
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-gap: 4%;
+}
+.ios{
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  background-color: #67c4b1;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.ios:hover{
+  background-color: #8a95ff;
+}
+.mac{
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  background-color: #67c4b1;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+.mac:hover{
+  background-color: #8a95ff;
+}
+.pad_left{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.pad_right{
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+.text-set-keep{
+  text-align: center;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+.text_pad_left_keep{
+  display: block;
+}
+.text_pad_right_keep{
+  display: block;
+}
+.image_text{
+  /*display:flex;*/
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 1%;
+}
+.left_img_box{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.right_text_box{
+  grid-column-start: 2;
+}
+.content_holder{
+  text-align: center;
+  padding-left:  15%;
+  padding-right: 15%;
+  padding-bottom: 100px;
+}
+.quick_know_how{
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid: 1%;
+  padding-bottom: 100px;
+}
+.qhk_hold{
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.logo_holder{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 100px;
+}
+.foot{
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  background-color: #f5f6f8;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.footer_logo{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+}
+.item1{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.item2{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.item3{
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.item4{
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.item5{
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+.social{
+  grid-column-start: 5;
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  align-content: center;
+}
 
 /*Line1 will hold logo first, header, first paragrphs and the two buttons/links*/
+/*
 .line1{
   align-content: center;
   text-align: center;
@@ -35,38 +179,9 @@ a:hover{
   margin-right: auto;
   padding-bottom: 50px;
 }
-.links{
-  margin-left: 740px;
-  display: flex;
-}
-.ios{
-  margin: 8px;
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
-  background-color: #67c4b1;
-  border-radius: 50px;
-  height: 40px;
-  width: 200px;
-}
-.ios:hover{
-  background-color: #8a95ff;
-}
-.mac{
-  margin: 8px;
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
-  background-color: #67c4b1;
-  border-radius: 50px;
-  height: 40px;
-  width: 200px;
-}
-.mac:hover{
-  background-color: #8a95ff;
-}
-
 
 /*Line2 will contain an H3 and slightly smaller text*/
-.line2{
+/*.line2{
   text-align: center;
   padding-bottom: 40px;
 }
@@ -76,7 +191,6 @@ a:hover{
   padding-right: 700px;
 }
 
-/*Line3 will contain one image on the left and three text sets.*/
 .line3{
   display:flex;
   justify-content: center;
@@ -89,17 +203,14 @@ a:hover{
   padding-bottom: 55px;
 }
 
-/*Line4 will be non- existent and simply contain class*/
 .pad{
   padding: 300px 0px 300px 0px;
 }
 
-/*Line5 is are last few facts*/
 .line5{
   padding: 100px;
 }
 
-/*Footer*/
 .foot{
   display: flex;
   background-color: #f5f6f8;
@@ -110,7 +221,7 @@ a:hover{
 .icon{
   padding-left: 30px;
   padding-right: 30px
-}
+}*/
 svg{
   padding-left: 50px;
   width: 70px;
